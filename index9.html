@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 9</title>
+</head>
+<body>
+  <script>
+    //объявление переменных admin и name и присвоение им значений
+    let admin;
+    let name;
+    name = "Виталий Валентинович";
+    admin = name;
+    document.write(admin + "<br>");
+
+    //функция замены значения admin
+    function myFunction(params) {
+      admin = "Елена Ивановна";
+      document.write(admin + "<br>");
+      document.write(name + "<br>");      
+    }
+  </script>
+  
+  <!--Кнопка для отображения значений admin и name-->
+  <button onclick="myFunction()">Нажми меня, please!</button>
+
+</body>
+</html>
